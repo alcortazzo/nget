@@ -12,6 +12,7 @@ def nget(
 ) -> Union[Any, _T]:
     """
     Safely retrieving nested values from data structures using a sequence of keys or indexes.
+    If a key/index is not found, the function will return the default value if provided, otherwise it will raise an exception.
 
     Args:
         structure (Union[Mapping[Any, Any], Sequence[Any]]): Data structure to get the value from.
